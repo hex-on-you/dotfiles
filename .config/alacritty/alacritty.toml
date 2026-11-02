@@ -1,0 +1,31 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/noctalia.toml",
+]
+
+[window]
+decorations = "None"
+
+[font]
+size = 16.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+
+[[keyboard.bindings]]
+key = "М"
+mods = "Control|Shift"
+action = "Paste"
+[[keyboard.bindings]]
+key = "С"
+mods = "Control|Shift"
+action = "Copy"

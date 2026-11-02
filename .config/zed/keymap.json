@@ -1,0 +1,84 @@
+[
+    {
+        "context": "Workspace",
+        "bindings": {
+            "shift-f9 shift-f10": "project_symbols::Toggle",
+        },
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-t": "terminal_panel::Toggle",
+        },
+    },
+    {
+        "context": "Workspace",
+        "unbind": {
+            "ctrl-`": "terminal_panel::Toggle",
+        },
+    },
+    {
+        "context": "KeymapEditor",
+        "unbind": {
+            "ctrl-t": "keymap_editor::ShowMatchingKeybinds",
+        },
+    },
+    {
+        "context": "DebugPanel",
+        "unbind": {
+            "ctrl-t": "debugger::ToggleThreadPicker",
+        },
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-tab": "tab_switcher::Toggle",
+        },
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-shift-tab": [
+                "tab_switcher::Toggle",
+                {
+                    "select_last": false
+                }
+            ]
+        }
+    },
+    {
+        "context": "Editor",
+        "unbind": {
+            "ctrl-.": "editor::ToggleCodeActions"
+        }
+    },
+    {
+        "bindings": {
+            "ctrl-shift-m": "editor::FormatSelections"
+        }
+    },
+    {
+        "context": "NotebookEditor",
+        "unbind": {
+            "ctrl-shift-m": "notebook::AddMarkdownBlock"
+        }
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-shift-f11 ctrl-shift-f10": "diagnostics::Deploy"
+        }
+    },
+    {
+        "context": "Workspace",
+        "unbind": {
+            "ctrl-shift-m": "diagnostics::Deploy"
+        }
+    },
+    {
+        "context": "NotebookEditor > Editor",
+        "unbind": {
+            "ctrl-shift-m": "notebook::AddMarkdownBlock"
+        }
+    }
+]

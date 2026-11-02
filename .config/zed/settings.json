@@ -1,0 +1,110 @@
+{
+    "cli_default_open_behavior": "existing_window",
+    "format_on_save": "on",
+    "minimap": {
+        "show": "auto",
+    },
+
+    "preferred_line_length": 140,
+    "auto_update": false,
+    "edit_predictions": {
+        "allow_data_collection": "no",
+    },
+    "code_lens": "on",
+    "languages": {
+        "Python": {
+            "inlay_hints": {
+                "show_parameter_hints": false,
+                "show_type_hints": false,
+                "show_value_hints": false,
+                "show_background": false,
+                "enabled": true,
+            },
+        },
+    },
+    "tabs": {
+        "file_icons": true,
+    },
+    "title_bar": {
+        "show_branch_status_icon": true,
+    },
+    "status_bar": {
+        "active_encoding_button": "enabled",
+    },
+    "auto_signature_help": false,
+    "inline_code_actions": false,
+    "relative_line_numbers": "disabled",
+    "icon_theme": {
+        "mode": "dark",
+        "light": "Material Icon Theme",
+        "dark": "Material Icon Theme",
+    },
+    "buffer_font_features": {
+        "calt": false, // Disable ligatures
+    },
+    "toolbar": {
+        "code_actions": false,
+        "quick_actions": false,
+    },
+    "mouse_wheel_zoom": true,
+    "semantic_tokens": "combined",
+    "project_panel": {
+        "bold_folder_labels": true,
+        "dock": "left",
+        "starts_open": true,
+        "git_status": false,
+    },
+    "disable_ai": true,
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false,
+    },
+    "ui_font_size": 18.0,
+    "buffer_font_size": 15,
+    "theme": {
+        "mode": "dark",
+        "light": "Gruvbox Light",
+        "dark": "VSCode Dark Modern",
+    },
+    "file_scan_exclusions": ["**/__pycache__", "**/.vscode"],
+    "tab_size": 4,
+    "lsp": {
+        "ruff": {
+            "initialization_options": {
+                "settings": {
+                    "lineLength": 140,
+                    "lint": {
+                        "ignore": ["F401", "F541", "SIM117", "TRY002"],
+                    },
+                },
+            },
+        },
+        "basedpyright": {
+            "settings": {
+                "basedpyright": {
+                    "analysis": {
+                        "diagnosticMode": "workspace",
+                        "typeCheckingMode": "strict",
+                        "strictParameterNoneValue": true,
+                        "strictListInference": true,
+                        "strictDictionaryInference": true,
+                        "strictSetInference": true,
+                        "deprecateTypingAliases": true,
+                        "autoImportCompletions": false,
+
+                        "diagnosticSeverityOverrides": {
+                            "reportUnusedImport": "none",
+                            "reportUnusedVariable": "none",
+                            "reportImportCycles": "error",
+                            "reportDuplicateImport": "error",
+                            "reportMissingTypeStubs": "error",
+                            "reportUnknownMemberType": "error",
+                            "reportGeneralTypeIssues": "error",
+                        },
+                        "exclude": ["**/__pycache__", ".venv", "/usr/"],
+                    },
+                },
+            },
+        },
+    },
+}
